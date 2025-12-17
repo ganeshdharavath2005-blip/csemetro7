@@ -16,7 +16,7 @@ def generate_qr(data):
     return img
 
 #STREAMLIT UI
-#st.title("metro Ticket BOOKING")
+st.title("🚆METRO TICKET BOOKING🚆")
 stations = ["Ameerpet","Miyapur","LB Nager","KPHB","JNTU"]
 name = st.text_input("passenger name")
 source = st.selectbox("source station",stations)
@@ -53,12 +53,13 @@ if st.button("book ticket"):
 
         st.success("Ticket booked successfully")
 
-        st.write("### ticket details")
-        st.write(f"**booking ID:** {booking_id}")
-        st.write(f"**passenger:**{ name}")
+        st.write("### TICKET DETAILS")
+        st.write(f"**Booking ID:** {booking_id}")
+        st.write(f"**Passenger:**{ name}")
         st.write(f"**from:**{source}")
         st.write(f"**to:**{destination}")
-        st.write(f"**tickets:**{no_tickets}")
-        st.write(f"**amount paid:**{total_amount}")
+        st.write(f"**Tickets:**{no_tickets}")
+        st.write(f"**Amount paid:**{total_amount}")
         st.image(qr_bytes,width=200)
         
+
