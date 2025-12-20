@@ -2,3 +2,4 @@ qrcode
 uuid
 streamlit
 gtts
+pandas
